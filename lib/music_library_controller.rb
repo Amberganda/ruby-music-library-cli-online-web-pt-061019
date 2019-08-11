@@ -1,3 +1,5 @@
+require 'pry'
+
 class MusicLibraryController
 
     # attr_reader :path
@@ -79,6 +81,7 @@ class MusicLibraryController
         # self.list_songs
         song_number = gets.to_i
         songs = Song.all.sort_by {|song| song.name}
+        binding.pry
 
         if song_number >= 0 && song_number < songs.length
             song = songs[song_number]
