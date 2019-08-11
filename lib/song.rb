@@ -65,7 +65,7 @@ class Song
         pieces = file_name.split(" - ")
         artist_name = pieces[0].strip
         song_name = pieces[1].strip
-        genre_name = pieces[2].strip
+        genre_name = pieces[2].split(".").first.strip
 
         artist = Artist.find_or_create_by_name(artist_name)
         genre = Genre.find_or_create_by_name(genre_name)
