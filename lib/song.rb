@@ -67,15 +67,13 @@ class Song
         genre_name = pieces[2].strip
 
         artist = Artist.create(artist_name)
-
         song = Song.create(song_name)
-
         genre = Genre.create(genre_name)
 
         song.artist = artist
+        song.genre = genre
 
         song
-        genre
     end
 
 
