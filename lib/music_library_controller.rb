@@ -24,7 +24,14 @@ class MusicLibraryController
         input = nil
         while input != "exit"
             input = gets
+
+            case input
+            when "list songs"
+                self.list_songs
+            end
+
         end
+
     end
 
     def list_songs
