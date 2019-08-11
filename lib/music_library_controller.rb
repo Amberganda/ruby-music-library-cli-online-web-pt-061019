@@ -39,6 +39,7 @@ class MusicLibraryController
         index = 1
         artists.each do |artist|
             puts "#{index}. #{artist.name}"
+            index += 1
         end
     end
 
