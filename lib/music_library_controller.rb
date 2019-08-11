@@ -76,10 +76,12 @@ class MusicLibraryController
 
     def play_song
         puts "Which song number would you like to play?"
-        song_name = gets
-        if song_name.length >= 1
-            puts "Playing #{song_name} by #{song.artist}"
+        song_number = gets
+        if song_number > 0 && song_number < Songs.length - 1
+            puts "Playing #{song.artist.name} by #{song_name.artist}"
         end
     end
+
+
 
 end
