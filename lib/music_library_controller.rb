@@ -13,10 +13,14 @@ class MusicLibraryController
 
         puts "To list all of your songs, enter 'list songs'."
 
+        puts "To list all of the artists in your library, enter 'list artists'."
+
         input = nil
         while input != "exit"
             input = gets
         end
+
+        
     end
 
 end
