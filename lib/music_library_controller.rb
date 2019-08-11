@@ -22,7 +22,7 @@ class MusicLibraryController
             input = gets
         end
 
-        
+
     end
 
 end
