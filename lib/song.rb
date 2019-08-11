@@ -75,7 +75,6 @@ class Song
         song.artist = artist
 
         song
-        genre
     end
 
 
