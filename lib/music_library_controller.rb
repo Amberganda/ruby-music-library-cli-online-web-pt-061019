@@ -21,6 +21,8 @@ class MusicLibraryController
 
         puts "To list all of the songs of a particular genre, enter 'list genre'."
 
+        puts "To play a song, enter 'play song'."
+
         input = nil
         while input != "exit"
             input = gets
