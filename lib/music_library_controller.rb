@@ -76,7 +76,7 @@ class MusicLibraryController
 
     def play_song
         puts "Which song number would you like to play?"
-        self.list_songs
+        # self.list_songs
         song_number = gets.to_i
         songs = Song.all
 
