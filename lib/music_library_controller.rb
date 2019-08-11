@@ -23,8 +23,10 @@ class MusicLibraryController
         while input != "exit"
             input = gets
         end
+    end
 
-
+    def list_songs
+        Song.all
     end
 
 end
