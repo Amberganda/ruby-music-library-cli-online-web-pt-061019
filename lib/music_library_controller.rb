@@ -8,4 +8,8 @@ class MusicLibraryController
         @importer.import
     end
 
+    def call
+        puts "welcome"
+    end
+
 end
