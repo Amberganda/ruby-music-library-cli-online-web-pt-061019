@@ -8,7 +8,7 @@ class MusicImporter
     end
 
     def files
-        Dir.entries(@path)
+        Dir.entries(@path).select {|item| item[0] != "."}
 
     end
 
