@@ -33,5 +33,4 @@ class MusicLibraryController
             index += 1
         end
     end
-    
 end
