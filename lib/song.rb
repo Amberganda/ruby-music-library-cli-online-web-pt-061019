@@ -66,14 +66,15 @@ class Song
         song_name = pieces[1].strip
         genre_name = pieces[2].strip
 
-        song = Song.create(song_name)
+        #song = Song.create(song_name)
         artist = Artist.find_or_create_by_name(artist_name)
         genre = Genre.find_or_create_by_name(genre_name)
 
-        song.artist = artist
-        song.genre = genre
+        # song.artist = artist
+        # song.genre = genre
 
-        song
+        # song
+        Song.new(song_name, artist, genre)
     end
 
     def self.create_from_filename(file_name)
