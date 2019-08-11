@@ -78,7 +78,7 @@ class MusicLibraryController
         puts "Which song number would you like to play?"
         # self.list_songs
         song_number = gets.to_i
-        songs = Song.all
+        songs = Song.all.sort_by {|song| song.name}
 
         if song_number >= 0 && song_number < songs.length
             song = songs[song_number]
