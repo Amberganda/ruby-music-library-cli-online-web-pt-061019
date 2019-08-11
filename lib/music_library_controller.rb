@@ -81,9 +81,9 @@ class MusicLibraryController
         puts song_number
         songs = Song.all
 
-        if song_number >= 0 && song_number < songs.length 
+        if song_number >= 0 && song_number < songs.length
             song = songs[song_number]
-            puts "Playing #{song.artist.name} by #{song_name.artist}"
+            puts "Playing #{song.artist.name} by #{song.artist}"
         end
             # end
         # if song_number > 0 && song_number < Songs.length - 1
