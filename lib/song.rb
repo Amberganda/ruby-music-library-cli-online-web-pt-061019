@@ -66,7 +66,7 @@ class Song
         song_name = pieces[1].strip
 
         artist = Artist.create(artist_name)
-        
+
         song = Song.create(song_name)
 
         song.artist = artist
