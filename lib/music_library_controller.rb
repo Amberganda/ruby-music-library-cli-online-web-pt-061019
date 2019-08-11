@@ -43,4 +43,12 @@ class MusicLibraryController
         end
     end
 
+    def list_genres
+        genres = Genre.all.sort_by {|genre| genre.name}
+        index = 1
+        genre.each do |genre|
+            puts ""
+        end
+    end
+
 end
