@@ -78,7 +78,6 @@ class MusicLibraryController
 
     def play_song
         puts "Which song number would you like to play?"
-        # self.list_songs
         song_number = gets.to_i - 1
         songs = Song.all.sort_by {|song| song.name}
         # binding.pry
@@ -88,9 +87,5 @@ class MusicLibraryController
             song = songs[song_number]
             puts "Playing #{song.name} by #{song.artist.name}"
         end
-            # end
-        # if song_number > 0 && song_number < Songs.length - 1
-        #     puts "Playing #{song.artist.name} by #{song_name.artist}"
-        # end
     end
 end
